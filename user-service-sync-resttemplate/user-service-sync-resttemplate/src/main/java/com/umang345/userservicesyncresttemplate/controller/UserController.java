@@ -7,7 +7,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/users")
@@ -20,34 +22,50 @@ public class UserController
     public ResponseEntity<?> getUserById(@PathVariable Long userId)
     {
         User user = userService.getUserById(userId);
+        Map<String, Object> response = new HashMap<>();
         if(user==null){
             User nullUser = User.builder().id(0).firstName(null).lastName(null).email(null).build();
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(nullUser);
+            response.put("status", HttpStatus.NOT_FOUND.value());
+            response.put("data", nullUser);
+            return ResponseEntity.status(HttpStatus.OK).body(response);
         }
-        return ResponseEntity.ok().body(user);
+        response.put("status", HttpStatus.OK.value());
+        response.put("data", user);
+        return ResponseEntity.ok().body(response);
     }
 
     @GetMapping
     public ResponseEntity<?> getAllUsers(){
         List<User> users = userService.getAllUser();
-        return ResponseEntity.ok().body(users);
+        Map<String, Object> response = new HashMap<>();
+        response.put("status", HttpStatus.OK.value());
+        response.put("data", users);
+        return ResponseEntity.ok().body(response);
     }
 
     @PostMapping
     public ResponseEntity<?> createUser(@RequestBody User newUser) {
         User createdUser = userService.createUser(newUser);
-        return ResponseEntity.status(HttpStatus.CREATED).body(createdUser);
+        Map<String, Object> response = new HashMap<>();
+        response.put("status", HttpStatus.CREATED.value());
+        response.put("data", createdUser);
+        return ResponseEntity.ok().body(response);
     }
 
     @PutMapping("/{userId}")
     public ResponseEntity<?> updateUser(@RequestBody User user, @PathVariable Long userId){
 
         User updateUser = userService.updateUser(user,userId);
+        Map<String, Object> response = new HashMap<>();
         if(updateUser==null){
             User nullUser = User.builder().id(0).firstName(null).lastName(null).email(null).build();
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(nullUser);
+            response.put("status", HttpStatus.NOT_FOUND.value());
+            response.put("data", nullUser);
+            return ResponseEntity.status(HttpStatus.OK).body(response);
         }
-        return ResponseEntity.status(HttpStatus.OK).body(updateUser);
+        response.put("status", HttpStatus.OK.value());
+        response.put("data", updateUser);
+        return ResponseEntity.ok().body(response);
     }
 
     @DeleteMapping("/{userId}")

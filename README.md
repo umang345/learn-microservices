@@ -14,7 +14,7 @@ This repository contains working codes for my spring boot projects for learning 
 
 <hr>
 
-## 2) Synchronous communication between microservices using Feign Client <br>
+## 3) Asynchronous Communication between microservices using @EnableAsync and @Async <br>
 <a href="https://github.com/umang345/learn-microservices/tree/master/asynchronous-communication-enable-async">Link</a>
 
 <hr>

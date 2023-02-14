@@ -10,8 +10,6 @@ import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Map;
-
 @RestController
 @RequestMapping("/simulate/users")
 public class RunnerController

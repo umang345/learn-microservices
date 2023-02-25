@@ -1,0 +1,13 @@
+package com.umang345.mailserviceasyncrabbitmq;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MailServiceAsyncRabbitMqApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MailServiceAsyncRabbitMqApplication.class, args);
+	}
+
+}

@@ -18,3 +18,8 @@ This repository contains working codes for my spring boot projects for learning 
 <a href="https://github.com/umang345/learn-microservices/tree/master/asynchronous-communication-enable-async">Link</a>
 
 <hr>
+
+## 4) Asynchronous Communication between microservices using using RabbitMQ <br>
+<a href="https://github.com/umang345/learn-microservices/tree/master/asynchronous-communication-rabbit-mq">Link</a>
+
+<hr>

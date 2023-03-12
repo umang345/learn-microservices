@@ -23,3 +23,8 @@ This repository contains working codes for my spring boot projects for learning 
 <a href="https://github.com/umang345/learn-microservices/tree/master/asynchronous-communication-rabbit-mq">Link</a>
 
 <hr>
+
+## 5) Service Discovery Using Eureka <br>
+<a href="https://github.com/umang345/learn-microservices/tree/master/service-discovery-eureka">Link</a>
+
+<hr>

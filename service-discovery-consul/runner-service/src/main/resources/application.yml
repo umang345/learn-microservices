@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: RUNNER-SERVICE
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: /actuator/health
+
+
+management:
+  security:
+    enabled: false

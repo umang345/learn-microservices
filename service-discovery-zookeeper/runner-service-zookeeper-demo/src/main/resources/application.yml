@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: RUNNER-SERVICE
+  cloud:
+    zookeeper:
+      discovery:
+        enabled: true
+
+logging:
+  level:
+    org.apache.zookeeper.ClientCnxn: WARN

@@ -29,7 +29,12 @@ This repository contains working codes for my spring boot projects for learning 
 
 <hr>
 
-## 5) Service Discovery Using HashiCorp Consul <br>
+## 6) Service Discovery Using HashiCorp Consul <br>
 <a href="https://github.com/umang345/learn-microservices/tree/master/service-discovery-consul">Link</a>
+
+<hr>
+
+## 7) Service Discovery Using Apache ZooKeeper <br>
+<a href="https://github.com/umang345/learn-microservices/tree/master/service-discovery-zookeeper">Link</a>
 
 <hr>

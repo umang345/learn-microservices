@@ -39,7 +39,7 @@ This repository contains working codes for my spring boot projects for learning 
 
 <hr>
 
-## 7) What is an API Gateway <br>
-<a href="https://github.com/umang345/learn-microservices/tree/master/service-discovery-zookeeper">Link</a>
+## 8) What is an API Gateway <br>
+<a href="https://github.com/umang345/learn-microservices/tree/master/what-is-api-gateway">Link</a>
 
 <hr>
